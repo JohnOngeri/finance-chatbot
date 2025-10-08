@@ -1,0 +1,72 @@
+[
+  {
+    "user": "What is mobile banking?",
+    "reference": "Mobile banking allows you to access banking services through your smartphone or tablet. You can check balances, transfer money, pay bills, deposit checks, and manage accounts anytime, anywhere with an internet connection.",
+    "prediction": "Mobile banking is a mobile banking service that can be used for banking purposes, such as banking, and banking. It's based on the type of banking you use.",
+    "intent": "mobile_money",
+    "is_ood": false
+  },
+  {
+    "user": "Tell me about an overdraft fee?",
+    "reference": "An overdraft fee is charged when you spend more money than you have in your account and the bank covers the transaction. Fees typically range from $25-35 per transaction. You can opt out of overdraft coverage to avoid these fees.",
+    "prediction": "Overdraft fees are taxed on a fixed interest rate, based on the amount of interest you pay, and if you are unsure of the fees, you may be able to pay the debt.",
+    "intent": "bank_fees",
+    "is_ood": false
+  },
+  {
+    "user": "Signs of credit card fraud?",
+    "reference": "Watch for unauthorized charges, unfamiliar accounts on your credit report, missing bills or statements, denied credit applications, or calls about purchases you didn't make. Report suspicious activity to your bank immediately.",
+    "prediction": "Credit card fraud is a fraud based on your credit history. It can be attributed to fraud, theft, or fraud.",
+    "intent": "fraud_awareness",
+    "is_ood": false
+  },
+  {
+    "user": "Is it wise to get a loan?",
+    "reference": "Consider a loan only if you can afford the monthly payments, the interest rate is reasonable, and the purpose is worthwhile (education, home, debt consolidation). Avoid loans for depreciating assets or discretionary spending.",
+    "prediction": "Is it wise to get a loan to borrow money from the lender? I'm not sure if you can afford the loan.",
+    "intent": "loan_info",
+    "is_ood": false
+  },
+  {
+    "user": "Why is compound interest important?",
+    "reference": "Compound interest is powerful for long-term wealth building. Starting early gives your money more time to compound. Even small amounts can grow significantly over decades due to the exponential nature of compounding.",
+    "prediction": "Compound interest is a major interest in interest rates. It is important to invest in compound interest, especially if you are interested in financing.",
+    "intent": "interest_compound",
+    "is_ood": false
+  },
+  {
+    "user": "What is identity theft?",
+    "reference": "Identity theft occurs when someone uses your personal information (name, SSN, credit card numbers) without permission to commit fraud like opening accounts, making purchases, or filing false tax returns. It can severely damage your credit and finances.",
+    "prediction": "Identity theft is a theft of identity information. It's known as identity theft, which can be used to protect your identity.",
+    "intent": "fraud_awareness",
+    "is_ood": false
+  },
+  {
+    "user": "Should I use credit or debit?",
+    "reference": "Use credit cards for building credit, earning rewards, and purchase protection, but only if you pay the full balance monthly. Use debit cards if you struggle with overspending or want to avoid debt entirely.",
+    "prediction": "Debit card is a debit card used to pay bills for credit card purchases. You can use debit cards to make payments.",
+    "intent": "credit_vs_debit",
+    "is_ood": false
+  },
+  {
+    "user": "Tips for managing my budget?",
+    "reference": "Track every expense, even small ones. Use the envelope method for cash spending. Automate savings transfers. Cut unnecessary subscriptions. Review and adjust your budget monthly based on actual spending.",
+    "prediction": "Budgeting is a process that helps you manage your budget. It's easy to manage and manage expenses.",
+    "intent": "budgeting_tips",
+    "is_ood": false
+  },
+  {
+    "user": "What's the difference between credit and debit cards?",
+    "reference": "Credit cards let you borrow money up to a limit and pay it back later, potentially with interest. Debit cards withdraw money directly from your bank account. Credit cards can help build credit history, while debit cards help avoid debt.",
+    "prediction": "Credit cards are a combination of credit cards and debit cards. It's easy to use, but you can't afford to spend money on your credit card.",
+    "intent": "credit_vs_debit",
+    "is_ood": false
+  },
+  {
+    "user": "What's the meaning of life?",
+    "reference": "I'm specialized in finance and focus on practical financial advice. I can help with financial planning, budgeting, or achieving your financial goals.",
+    "prediction": "Finance: What's the meaning of life? Life is a life that has many meanings. You can't afford to spend time with friends, family, or friends.",
+    "intent": "ood",
+    "is_ood": true
+  }
+]
