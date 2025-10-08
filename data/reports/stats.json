@@ -1,0 +1,134 @@
+[
+  {
+    "split": "train",
+    "total_samples": 177,
+    "ood_samples": 15,
+    "in_domain_samples": 162,
+    "intent_distribution": {
+      "tax_basics": 13,
+      "fraud_awareness": 12,
+      "financial_planning": 12,
+      "credit_score": 14,
+      "credit_vs_debit": 8,
+      "budgeting_definition": 9,
+      "mobile_money": 14,
+      "investment_basics": 23,
+      "exchange_rates": 4,
+      "interest_compound": 9,
+      "budgeting_tips": 8,
+      "ood": 15,
+      "savings_advice": 4,
+      "loan_info": 18,
+      "bank_fees": 14
+    },
+    "unique_intents": 15,
+    "tokenizer_type": "T5 SentencePiece",
+    "vocab_size": 32100,
+    "user_token_stats": {
+      "mean": 7.694915254237288,
+      "min": 4,
+      "max": 13,
+      "median": 7
+    },
+    "assistant_token_stats": {
+      "mean": 45.76271186440678,
+      "min": 22,
+      "max": 80,
+      "median": 46
+    },
+    "unique_tokens_used": 961,
+    "vocab_coverage_pct": 2.993769470404984,
+    "financial_terms_found": 7,
+    "avg_tokens_per_financial_term": 1.4285714285714286,
+    "avg_user_chars": 25.84180790960452,
+    "avg_assistant_chars": 217.65536723163842
+  },
+  {
+    "split": "val",
+    "total_samples": 103,
+    "ood_samples": 14,
+    "in_domain_samples": 89,
+    "intent_distribution": {
+      "financial_planning": 5,
+      "savings_advice": 4,
+      "credit_score": 7,
+      "ood": 14,
+      "bank_fees": 6,
+      "fraud_awareness": 7,
+      "mobile_money": 10,
+      "budgeting_definition": 4,
+      "loan_info": 7,
+      "credit_vs_debit": 5,
+      "tax_basics": 9,
+      "exchange_rates": 4,
+      "budgeting_tips": 6,
+      "investment_basics": 9,
+      "interest_compound": 6
+    },
+    "unique_intents": 15,
+    "tokenizer_type": "T5 SentencePiece",
+    "vocab_size": 32100,
+    "user_token_stats": {
+      "mean": 7.456310679611651,
+      "min": 4,
+      "max": 12,
+      "median": 7
+    },
+    "assistant_token_stats": {
+      "mean": 44.15533980582524,
+      "min": 22,
+      "max": 80,
+      "median": 45
+    },
+    "unique_tokens_used": 953,
+    "vocab_coverage_pct": 2.9688473520249223,
+    "financial_terms_found": 7,
+    "avg_tokens_per_financial_term": 1.4285714285714286,
+    "avg_user_chars": 25.009708737864077,
+    "avg_assistant_chars": 212.8252427184466
+  },
+  {
+    "split": "test",
+    "total_samples": 99,
+    "ood_samples": 12,
+    "in_domain_samples": 87,
+    "intent_distribution": {
+      "mobile_money": 6,
+      "bank_fees": 7,
+      "fraud_awareness": 7,
+      "loan_info": 8,
+      "interest_compound": 5,
+      "credit_vs_debit": 6,
+      "budgeting_tips": 4,
+      "ood": 12,
+      "tax_basics": 6,
+      "investment_basics": 10,
+      "credit_score": 6,
+      "exchange_rates": 4,
+      "financial_planning": 8,
+      "budgeting_definition": 6,
+      "savings_advice": 4
+    },
+    "unique_intents": 15,
+    "tokenizer_type": "T5 SentencePiece",
+    "vocab_size": 32100,
+    "user_token_stats": {
+      "mean": 7.484848484848484,
+      "min": 4,
+      "max": 12,
+      "median": 7
+    },
+    "assistant_token_stats": {
+      "mean": 44.56565656565657,
+      "min": 22,
+      "max": 80,
+      "median": 46
+    },
+    "unique_tokens_used": 945,
+    "vocab_coverage_pct": 2.9439252336448596,
+    "financial_terms_found": 7,
+    "avg_tokens_per_financial_term": 1.4285714285714286,
+    "avg_user_chars": 25.464646464646464,
+    "avg_assistant_chars": 214.03030303030303
+  }
+]
