@@ -381,7 +381,7 @@ with gr.Blocks(
         # Left column - Chat interface
         with gr.Column(scale=2):
             chatbot = gr.Chatbot(
-                height=500, 
+                height=200, 
                 label="💬 Conversation",
                 show_label=True,
                 avatar_images=(None, "🤖"),
@@ -589,7 +589,7 @@ if __name__ == "__main__":
     print("\n" + "="*60 + "\n")
     
     demo.launch(
-        share=False,
+        share=True,
         server_name="0.0.0.0",
         server_port=7860,
         show_error=True
