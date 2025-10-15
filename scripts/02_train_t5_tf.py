@@ -188,7 +188,7 @@ class ExperimentTracker:
         df = pd.concat([df, pd.DataFrame([row])], ignore_index=True)
         df.to_csv(self.csv_path, index=False)
         
-        print(f"\n✓ Logged run #{row['run_id']} to {self.csv_path}")
+        print(f"\nLogged run #{row['run_id']} to {self.csv_path}")
         if improvement_pct is not None:
             print(f"  Improvement over baseline: {improvement_pct:+.2f}%")
     
@@ -450,8 +450,8 @@ Examples:
     )
     
     # Data arguments
-    parser.add_argument('--train', type=str, default='data/processed/train.jsonl')
-    parser.add_argument('--val', type=str, default='data/processed/val.jsonl')
+    parser.add_argument('--train', type=str, default=r'C:\Users\HP\OneDrive\Desktop\finance chatbot\data\processed\train.jsonl')
+    parser.add_argument('--val', type=str, default=r'C:\Users\HP\OneDrive\Desktop\finance chatbot\data\processed\val.jsonl')
     parser.add_argument('--save_dir', type=str, default='models/t5-small-finance')
     
     # Hyperparameters

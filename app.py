@@ -14,7 +14,7 @@ import json
 from datetime import datetime
 
 # Load model and tokenizer
-MODEL_DIR = "models/t5-small-finance"
+MODEL_DIR = "models/t5-small-finance-processed"
 
 print("Loading model...")
 model = TFAutoModelForSeq2SeqLM.from_pretrained(MODEL_DIR)
@@ -104,18 +104,14 @@ def detect_ood(query: str) -> tuple[bool, str]:
     """Detect out-of-domain queries."""
     query_lower = query.lower()
     
-    # Check for finance keywords
-    has_finance_keyword = any(keyword in query_lower for keyword in FINANCE_KEYWORDS)
-    
-    # Check for OOD patterns
+    # Check for explicit OOD patterns (weather, cooking, etc.)
     has_ood_pattern = any(pattern in query_lower for pattern in OOD_PATTERNS)
     
-    if has_ood_pattern and not has_finance_keyword:
+    # Only reject if we have clear OOD patterns
+    if has_ood_pattern:
         return True, "Out-of-domain query detected"
     
-    if not has_finance_keyword and len(query.split()) > 3:
-        return True, "No finance keywords detected"
-    
+    # Let the model handle everything else
     return False, "In-domain query"
 
 def generate_response(
@@ -184,10 +180,14 @@ def generate_response(
     outputs = model.generate(
         input_ids,
         max_length=max_length,
-        num_beams=4,
+        num_beams=3,
         early_stopping=True,
         no_repeat_ngram_size=2,
-        temperature=temperature,
+        repetition_penalty=1.1,
+        do_sample=False,
+        temperature=0.7,
+        pad_token_id=tokenizer.pad_token_id,
+        eos_token_id=tokenizer.eos_token_id,
     )
     
     response = tokenizer.decode(outputs[0], skip_special_tokens=True)

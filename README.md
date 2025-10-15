@@ -1,3 +1,9 @@
+---
+title: finance_chatbot
+app_file: app.py
+sdk: gradio
+sdk_version: 5.49.0
+---
 # Finance Domain Chatbot Using Transformer Models
 
 A complete domain-specific chatbot built with T5-small (TensorFlow) for answering finance-related questions. The system includes synthetic data generation, model fine-tuning with hyperparameter exploration, comprehensive evaluation, and an interactive Gradio UI.

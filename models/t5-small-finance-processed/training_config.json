@@ -1,0 +1,16 @@
+{
+  "lr": 0.0003,
+  "batch_size": 16,
+  "epochs": 5,
+  "label_smoothing": 0.1,
+  "warmup_ratio": 0.05,
+  "dropout": 0.1,
+  "weight_decay": 0.01,
+  "gradient_clip": 1.0,
+  "max_length": 128,
+  "val_loss": 2.029705047607422,
+  "val_ppl": 7.611840724945068,
+  "total_steps": 1640,
+  "warmup_steps": 82,
+  "timestamp": "2025-10-15T15:31:46.892180"
+}
