@@ -41,27 +41,6 @@ preprocessed using a comprehensive pipeline to ensure high quality and domain sp
 - **Method:** Exact matching on (user, assistant) pairs
 - **Rationale:** Prevents model from memorizing repeated patterns
 
-## Preprocessing Results
-
-| Stage | Count | Filtered |
-|-------|-------|----------|
-| Original | 2986 | - |
-| After Cleaning | 2986 | 0 |
-| After Validation | 2986 | 0 |
-| After Deduplication | 177 | 2809 |
-
-**Filtered Breakdown:**
-- Too short: 0
-- Too long: 0
-- Invalid content: 0
-
-## Dataset Statistics
-
-| Split | Total | In-Domain | OOD | Unique Intents | Avg User Tokens | Avg Assistant Tokens |
-|-------|-------|-----------|-----|----------------|-----------------|----------------------|
-| train | 177 | 162 | 15 | 15 | 7.7 | 45.8 |
-| val | 103 | 89 | 14 | 15 | 7.5 | 44.2 |
-| test | 99 | 87 | 12 | 15 | 7.5 | 44.6 |
 
 ## Tokenization Analysis
 
@@ -181,3 +160,4 @@ See the following generated plots in `data/reports/`:
 ✓ **Balanced Distribution:** Stratified splits maintain intent distribution across train/val/test
 ✓ **Quality Filtered:** Malformed and low-quality samples removed
 ✓ **Deduplicated:** No repeated conversation pairs
+
