@@ -106,11 +106,7 @@ Financial literacy is crucial for personal well-being, yet many lack access to r
 
 ### Dataset Statistics
 
-| Split | Total | In-Domain | OOD | Unique Intents | Avg User Tokens | Avg Assistant Tokens |
-|-------|-------|-----------|-----|----------------|-----------------|----------------------|
-| train | 2,640 | 2,323     | 317 | 14             | 8.2             | 42.5                 |
-| val   | 330   | 290       | 40  | 14             | 8.1             | 42.3                 |
-| test  | 330   | 290       | 40  | 14             | 8.3             | 42.7                 |
+<img width="174" height="71" alt="image" src="https://github.com/user-attachments/assets/f5576e08-f25b-4cf5-a71c-751627546ef5" />
 
 See `data/reports/dataset_report.md` for detailed statistics and visualizations.
 
@@ -126,16 +122,10 @@ See `data/reports/dataset_report.md` for detailed statistics and visualizations.
 
 ### Hyperparameter Exploration
 
-We conducted **6+ training runs** exploring the following hyperparameters:
+We conducted **7+ training runs** exploring the following hyperparameters:
+<img width="782" height="389" alt="image" src="https://github.com/user-attachments/assets/e81ae8a4-1cd6-4494-9e33-2bf5ab1c4d82" />
 
-| Run | Model    | LR    | Batch Size | Epochs | Label Smoothing | Warmup Ratio | Val Loss | Val PPL | Notes    |
-|-----|----------|-------|------------|--------|-----------------|--------------|----------|---------|----------|
-| 1   | t5-small | 5e-4  | 16         | 3      | 0.0             | 0.0          | 1.245    | 3.47    | Baseline |
-| 2   | t5-small | 3e-4  | 16         | 5      | 0.1             | 0.05         | 1.089    | 2.97    | **Best** |
-| 3   | t5-small | 1e-4  | 32         | 5      | 0.1             | 0.05         | 1.156    | 3.18    |          |
-| 4   | t5-small | 1e-3  | 8          | 3      | 0.0             | 0.0          | 1.312    | 3.71    |          |
-| 5   | t5-small | 3e-4  | 16         | 3      | 0.1             | 0.0          | 1.178    | 3.25    |          |
-| 6   | t5-small | 5e-4  | 32         | 5      | 0.1             | 0.05         | 1.134    | 3.11    |          |
+
 
 ### Best Configuration
 - **Learning Rate:** 3e-4
