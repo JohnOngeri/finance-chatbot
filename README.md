@@ -405,25 +405,4 @@ Best run details saved in `experiments/best_run.json`.
 8. **Fact Verification:** Add fact-checking against authoritative sources
 
 ---
-
-## 📄 License
-
-MIT License - See LICENSE file for details.
-
----
-
-## 🙏 Acknowledgments
-
-- Hugging Face Transformers for model architecture
-- TensorFlow team for framework
-- Finance domain experts for knowledge validation
-
----
-
-## 📞 Contact
-
-For questions or feedback, please open an issue in the repository.
-
----
-
 **Built with ❤️ for financial literacy**
