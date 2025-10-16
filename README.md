@@ -314,8 +314,6 @@ jupyter notebook notebook.ipynb
 
 ## 📸 Screenshots
 
-### Gradio Interface
-![Gradio UI](https://via.placeholder.com/800x400?text=Gradio+Chat+Interface)
 
 *Interactive chat interface with explanation mode and sample questions*
 
